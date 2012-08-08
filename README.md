@@ -14,7 +14,7 @@ Processing by WineBookPricingController#index as HTML
   Rendered shared/_navbar.html.haml (1.8ms)
   Rendered shared/_alerts.html.haml (0.4ms)
 Completed 200 OK in 71ms (Views: 35.7ms | ActiveRecord: 21.5ms)
-Instantiation Breakdown: Total: 7 | WineBook: 4 | User: 1 | Group: 1 | Producer: 1
+*Instantiation Breakdown: Total: 7 | WineBook: 4 | User: 1 | Group: 1 | Producer: 1*
 ```
 
 ## Installation
