@@ -2,7 +2,7 @@
 
 Rack middleware to log the number of instantiated ActiveRecord models in a request. Helpful to see how many objects you're instantiating. First step to recognize you have a problem.
 
-Logs a message like:
+Logs a message like (notice the last line):
 
 ```
 Started GET "/wines/7016/pricing" for 192.168.255.9 at 2012-08-07 06:26:00 +0000
@@ -14,7 +14,7 @@ Processing by WineBookPricingController#index as HTML
   Rendered shared/_navbar.html.haml (1.8ms)
   Rendered shared/_alerts.html.haml (0.4ms)
 Completed 200 OK in 71ms (Views: 35.7ms | ActiveRecord: 21.5ms)
-**Instantiation Breakdown: Total: 7 | WineBook: 4 | User: 1 | Group: 1 | Producer: 1**
+Instantiation Breakdown: Total: 7 | WineBook: 4 | User: 1 | Group: 1 | Producer: 1
 ```
 
 ## Installation
