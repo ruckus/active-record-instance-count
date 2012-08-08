@@ -5,7 +5,16 @@ Rack middleware to log the number of instantiated ActiveRecord models in a reque
 Logs a message like:
 
 ```
-Instantiation Breakdown: Total: 3 | UserSession: 1 | User: 1 | UserDevice: 1
+Started GET "/wines/7016/pricing" for 192.168.255.9 at 2012-08-07 06:26:00 +0000
+Processing by WineBookPricingController#index as HTML
+  Parameters: {"wine_book_id"=>"7016"}
+  Rendered wine_book_pricing/index.html.haml within layouts/application (9.7ms)
+  Rendered shared/_analytics.html.erb (0.0ms)
+  Rendered shared/_ajax_status.html.haml (0.1ms)
+  Rendered shared/_navbar.html.haml (1.8ms)
+  Rendered shared/_alerts.html.haml (0.4ms)
+Completed 200 OK in 71ms (Views: 35.7ms | ActiveRecord: 21.5ms)
+Instantiation Breakdown: Total: 7 | WineBook: 4 | User: 1 | Group: 1 | Producer: 1
 ```
 
 ## Installation
